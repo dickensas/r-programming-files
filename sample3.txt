@@ -1,0 +1,5 @@
+library(magick)
+testimage <- image_read_svg('testimage.svg', width = 350)
+x11()
+print(testimage)
+image_write(testimage, path = "testimage.png", format = "png")
